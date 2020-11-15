@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title">
+        <item>首页</item>
+        <item>发现</item>
+        <item>礼包</item>
+        <item>我的</item>
+    </string-array>
+    <!--选中数组-->
+    <integer-array name="select">
+        <item>@mipmap/bottom_home_bg_select</item>
+        <item>@mipmap/bottom_discover_bg_select</item>
+        <item>@mipmap/bottom_gift_bg_select</item>
+        <item>@mipmap/bottom_activity_bg_select</item>
+    </integer-array>
+    <!--未选中数组-->
+    <integer-array name="unselect">
+        <item>@mipmap/bottom_home_bg_nomal</item>
+        <item>@mipmap/bottom_discover_bg_nomal</item>
+        <item>@mipmap/bottom_gift_bg_nomal</item>
+        <item>@mipmap/bottom_activity_bg_nomal</item>
+    </integer-array>
+</resources>
