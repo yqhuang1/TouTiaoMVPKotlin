@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!--Application相当于APP的一个单例，一些初始化需要在Application中去做-->
     <application
         android:name=".base.BaseApp"
         android:allowBackup="true"
@@ -13,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".base.BaseActivity"></activity>
+        <activity android:name=".ui.user.activity.PrivacySetActivity"></activity>
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".ui.user.activity.RegisterActivity" />
         <activity android:name=".ui.main.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

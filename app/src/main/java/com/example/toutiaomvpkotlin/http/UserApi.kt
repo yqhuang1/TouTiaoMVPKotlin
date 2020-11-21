@@ -6,6 +6,6 @@ import io.reactivex.Observable
 import retrofit2.http.GET
 
 interface UserApi {
-    @GET("index/appIndexMore.html")
+    @GET("index/appIndexList.html")
     fun getTest(): Observable<BaseModel<MainModel>>
 }

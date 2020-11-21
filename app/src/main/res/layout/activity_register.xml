@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.user.activity.RegisterActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="37dp"
+        android:background="@android:color/white"
+        android:src="@drawable/btn_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="42dp"
+        android:drawableLeft="@mipmap/tubiao_sysj"
+        android:drawablePadding="5dp"
+        android:text="@string/register_title"
+        android:textColor="@color/c_222222"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <TextView
+            android:id="@+id/tv_86"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableRight="@mipmap/content_draw_down"
+            android:paddingBottom="5dp"
+            android:text="+86"
+            android:textColor="@color/c_222222"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <com.example.toutiaomvpkotlin.view.MobileEditText
+            android:id="@+id/met_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_FFFFFF"
+            android:hint="手机号"
+            android:inputType="number"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/d15"
+            android:paddingTop="@dimen/d15"
+            android:paddingBottom="15dp"
+            app:layout_constraintLeft_toRightOf="@id/tv_86" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/c_D8D8D8"
+        app:layout_constraintTop_toBottomOf="@id/ll_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/v_line">
+
+        <com.example.toutiaomvpkotlin.view.MyCheckBox
+            android:id="@+id/my_cbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_next"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/c_E6645F"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_user">
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/fm_play_normal" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

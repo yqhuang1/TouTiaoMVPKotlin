@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_E5E5E5"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.PrivacySetActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_FFFFFF"
+        app:contentInsetStart="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/d12"
+            android:text="设置"
+            android:textColor="@color/c_222222"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d12"
+            android:src="@drawable/btn_image" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <com.example.toutiaomvpkotlin.view.SetingsItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowButton="true"
+                app:leftTitle="夜间模式" />
+
+            <com.example.toutiaomvpkotlin.view.SetingsItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowButton="true"
+                app:leftTitle="清除缓存"
+                app:rightTitle="540B" />
+
+            <com.example.toutiaomvpkotlin.view.SetingsItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="字体大小"
+                app:rightTitle="12sp" />
+
+            <com.example.toutiaomvpkotlin.view.SetingsItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentTitle="暂时过滤网站广告，为你节省更多资源"
+                app:leftTitle="H5广告过滤" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="隐私设置"
+                android:textColor="@color/c_999999"
+                android:textSize="@dimen/s10" />
+
+            <com.example.toutiaomvpkotlin.view.SetingsItemView
+                android:id="@+id/siv_h5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isShowButton="true"
+                app:leftTitle="允许推荐可能给我认识的人" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

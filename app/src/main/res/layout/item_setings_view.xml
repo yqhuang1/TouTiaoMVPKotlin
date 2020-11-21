@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_FFFFFF">
+
+    <TextView
+        android:id="@+id/left_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d12"
+        android:text="夜间模式"
+        android:textColor="@color/c_222222"
+        android:textSize="@dimen/s12" />
+
+    <TextView
+        android:id="@+id/right_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d12"
+        android:text="540B"
+        android:textColor="@color/c_222222"
+        android:textSize="@dimen/s10"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/left_title"
+        android:layout_marginLeft="@dimen/d12"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/d12"
+        android:textColor="@color/c_222222"
+        android:textSize="@dimen/s10"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_right_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d12"
+        android:src="@mipmap/mjkf_gray_arrow" />
+
+    <Switch
+        android:id="@+id/btn_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d12" />
+</RelativeLayout>

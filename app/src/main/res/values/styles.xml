@@ -7,4 +7,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="btn_off">
+        <!--switch的背景-->
+        <item name="android:track">@drawable/button_off</item>
+        <!--switch的按钮-->
+        <item name="android:thumb">@mipmap/message_notice_red</item>
+        <item name="background">@null</item>
+        <item name="android:textOff"></item>
+        <item name="android:textOn"></item>
+        <item name="switchMinWidth">50dp</item>
+    </style>
 </resources>

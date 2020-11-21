@@ -6,4 +6,11 @@
 
     <color name="c_505050">#505050</color>
     <color name="c_E6645F">#E6645F</color>
+    <color name="c_FFFFFF">#FFFFFF</color>
+    <color name="c_222222">#222222</color>
+    <color name="c_D8D8D8">#D8D8D8</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_4CD964">#4CD964</color>
+    <color name="c_DDDDDD">#DDDDDD</color>
+    <color name="c_E5E5E5">#E5E5E5</color>
 </resources>
